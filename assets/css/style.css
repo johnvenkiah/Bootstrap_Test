@@ -2,12 +2,53 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-.navbar {
+.container-wrapper {
 
 }
 
-.alert-container {
+.container-wrapper--red {
+    background: linear-gradient(45deg, rgb(161, 13, 13), rgb(185, 59, 0));
+    color: white;
+}
 
+.navalert-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 0;
+    padding-right: 0;
+    z-index: 1;
+}
+
+.navbar {
+    margin-bottom: 0;
+    border: 0;
+    width: 100%;
+}
+
+.navbar .navbar-toggler {
+    border: 0;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.navbar .navbar-nav a {
+    font-weight: bold;
+}
+
+.alert-container .col-12 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.site-wide-alert {
+    border-radius: 0;
+    margin-bottom: 0;
+    padding: 5px 15px;
+    background-color: #ffc91e;
+    border-color: #ffc91e;
 }
 
 .callout, .alert-container {
@@ -36,6 +77,18 @@ body {
     height: 100%;
     width: 100%;
     background: #0000007a
+}
+
+/* Page Headers */
+
+.page-header {
+    margin-bottom: 0;
+    border-bottom: 0;
+    text-align: center;
+}
+
+.page-header h2 {
+    margin-top: 0;
 }
 
 .quotes-container {
@@ -83,6 +136,17 @@ hr {
     width: 35px;
 }
 
+.hr-white {
+    background: linear-gradient(45deg, rgb(255, 185, 185), rgb(255, 237, 198));
+}
+
+/* Content Containers */
+
+.content-container {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
 /* Buttons */
 
 .btn--cta {
@@ -104,4 +168,26 @@ background: linear-gradient(45deg, rgb(155, 13, 13), rgb(255, 174, 0));
     background: linear-gradient(45deg, rgb(83, 6, 6), rgb(143, 98, 0));
     color:cornsilk;
     border: 1px solid cornsilk;
+}
+
+.feature {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.feature i {
+    margin-bottom: 20px;
+    font-size: 45px;
+    line-height: 45px;
+}
+
+.feature .btn {
+    background: linear-gradient(45deg, rgb(255, 185, 185), rgb(255, 237, 198));
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    min-width: 100px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: rgb(161, 13, 13);
 }
