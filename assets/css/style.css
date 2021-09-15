@@ -3,7 +3,7 @@ body {
 }
 
 .navbar {
-    z-index: 1;
+
 }
 
 .alert-container {
@@ -12,7 +12,7 @@ body {
 
 .callout, .alert-container {
     position: relative;
-    z-index: 1;
+
 }
 
 .callout-container {
@@ -89,9 +89,19 @@ hr {
     font-weight: bold;
     border-radius: 10px;
     width: 160px;
+    border: 1px solid rgb(155, 13, 13);
 }
 
 .btn--red {
 color: white;
-background: linear-gradient(45deg, rgb(255, 242, 124), rgb(255, 174, 0));
+background: linear-gradient(45deg, rgb(155, 13, 13), rgb(255, 174, 0));
+}
+
+.btn--red:hover,
+.btn--red:active,
+.btn--red:focus,
+.btn--red:active:focus {
+    background: linear-gradient(45deg, rgb(83, 6, 6), rgb(143, 98, 0));
+    color:cornsilk;
+    border: 1px solid cornsilk;
 }
